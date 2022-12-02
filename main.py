@@ -1,10 +1,8 @@
 def tong(m, n):
-    s = 0
     if m == n*n or n == m*m:
-        s = m + n
+        return m + n
     else:
-        s = 0
-    return s
+        return 0
 
 
 n = int(input('Hãy nhập số cặp số: '))
