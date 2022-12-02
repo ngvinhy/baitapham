@@ -1,16 +1,17 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def tong(m, n):
+    s = 0
+    if m == n*n or n == m*m:
+        s = m + n
+    else:
+        s = 0
+    return s
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+n = int(input('Hãy nhập số cặp số: '))
+S = 0
+for i in range(1, n+1):
+    a = int(input('Nhập vào số a: '))
+    b = int(input('Nhập vào số b: '))
+    s = tong(a, b)
+    S = S + s
+print('Tổng các số trong cặp số thỏa mãn bài toán là:', S)
